@@ -1,0 +1,17 @@
+<h2>Messages with {{contact.name}}</h2>
+
+<ul>
+{{#each message}}
+<li><p>{{content}} on {{timeCompare}} at {{channel}}</p></li>
+{{/each}}
+</ul>
+
+<hr>
+
+<ul>
+{{#each messageScheduled}}
+<li><p>{{content}} on {{timeToSend}} at {{channel}}</p></li>
+{{/each}}
+</ul>
+
+<a href="/contacts">Return to contacts</a>

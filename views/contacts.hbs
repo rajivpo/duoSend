@@ -1,0 +1,26 @@
+<h2>Contacts</h2>
+
+<table class="table table-striped">
+  <thead>
+    <td><b>Name</b></td>
+    <td><b>Phone</b></td>
+    <td><b>Email</b></td>
+    <td><b>Actions</b></td>
+  </thead>
+  <tbody>
+  {{#each contact}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{phone}}</td>
+    <td>{{email}}</td>
+    <td><a href='/messages/send/{{_id}}'>Send Text</a></td>
+    <td><a href='/messages/{{_id}}'>View Messages</a></td>
+    <td><a href='/contacts/new/{{_id}}'>Edit Contact</a></td>
+  </tr>
+  {{/each}}
+</tbody>
+</table>
+
+<a class="btn btn-primary" href='/contacts/new'>Add Contact</a>
+
+<a class="btn btn-primary" href='/logout'>Logout</a>

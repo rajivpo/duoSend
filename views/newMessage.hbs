@@ -1,0 +1,27 @@
+<form method="post">
+
+  <div class="form-group">
+    <label>Text Message</label>
+    <textarea class="form-control" rows="6" name="newMessageContent"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label class="radio-inline">
+      <input type="radio" name="newMessageChannel" value="sms">SMS
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="newMessageChannel" value="email">Email
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-default">Send {{contact.name}} Message {{contact.phone}}</button>
+
+  <div class="form-group collapse" id="scheduleMessageTimeInput">
+    <label>Time</label>
+    <input type="datetime-local" class="form-control" placeHolder="Time: (MM-DD-YYY-HH-MM)" name="scheduleMessageTimeInput">
+  </div>
+
+  <a class="btn btn-default scheduleMessageToggle" name="scheduleMessageToggle">Send Later</a>
+</form>
+
+<a href="/contacts">Return to contacts</a>

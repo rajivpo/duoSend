@@ -1,0 +1,26 @@
+<div class="bg-wrapper">
+
+<div class="mainContainer container-fluid col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+
+  <form method="post">
+    <div class="form-group col-xs-12 frontaction">
+      <input type="text" class="form-control" name="username" placeholder="Username" value="{{contact.name}}">
+    </div>
+    <div class="form-group col-xs-12 frontaction">
+      <input type="password" class="form-control" name="password" placeholder="Password" value="{{contact.phone}}">
+    </div>
+    <div class="form-group col-xs-6">
+      <button type="submit" class="btn btn-primary col-xs-12 frontaction">Login</button>
+    </div>
+  </form>
+
+  <div class="form-group col-xs-6">
+    <a class="btn btn-primary col-xs-12 frontaction" href='/auth/facebook'>Login with Facebook</a>
+  </div>
+
+  <div class="form-group col-xs-12">
+    <a class="btn btn-primary col-xs-12 frontaction" href='/signup'>Register Here</a>
+  </div>
+</div>
+
+</div>

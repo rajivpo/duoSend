@@ -1,0 +1,35 @@
+body {
+  /*overflow: hidden;*/
+  margin: 0;
+  padding: 3.5%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-wrapper {
+  position: absolute ;
+  height: 92%;
+  width: 93%;
+  /*border: 1px solid green;*/
+}
+
+.mainContainer {
+  position: absolute;
+  display: block;
+  top: 50%;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  /*border: 1px solid blue;*/
+  transform: translate(0%, -50%);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.frontaction {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
